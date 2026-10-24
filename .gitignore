@@ -1,0 +1,9 @@
+/includes/config.php
+/.env
+/.env.*
+!/.env.example
+/uploads/*
+!/uploads/.gitkeep
+*.log
+Thumbs.db
+Desktop.ini
