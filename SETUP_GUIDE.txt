@@ -109,8 +109,14 @@ with no password, press Enter when prompted for the password.
 5. ADMINISTRATOR ACCOUNT
 ------------------------
 
-The SQL dump intentionally includes no user accounts or password hashes.
-Provision accounts through your authorized local account-management workflow.
+The SQL dump seeds these initial accounts:
+
+   admin        admin@neartrip.com    role: admin
+   user         user@neartrip.com     role: user
+   sandaruwan   sandaru@neartrip.com  role: user
+
+Passwords are stored as bcrypt hashes, not readable passwords. Use the initial
+passwords provided by the project maintainer.
 
 
 6. APPLICATION URLS
