@@ -37,6 +37,15 @@ CREATE TABLE `administrator` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Dumping data for table `administrator`
+--
+
+INSERT INTO `administrator` (`admin_id`, `username`, `password_hash`, `email`, `role`, `created_at`) VALUES
+(6, 'admin', '$2y$10$8BlnSBFtyON4vBk2x4r84eXtPP8BTD9DYQ63vu3M2af1KDlRKR/Ne', 'admin@neartrip.com', 'admin', '2026-09-05 19:02:28'),
+(7, 'user', '$2y$10$dKHd0TXvkGVRdn0bf7JO/uTq1hWBJDxDS111cZtkeIHPjEW1GDXE.', 'user@neartrip.com', 'user', '2026-09-05 19:02:28'),
+(12, 'sandaruwan', '$2y$10$xC4cmd90OVc/y2m7jokO1uuJ1tfrU6ERFyK2Ce381cuPu9sPcyyw6', 'sandaru@neartrip.com', 'user', '2026-09-06 14:11:49');
+
+--
 -- --------------------------------------------------------
 
 --

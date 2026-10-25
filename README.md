@@ -327,8 +327,16 @@ Log out and log back in for the role change to take effect.
 
 ## 🔑 Default Credentials
 
-The SQL dump intentionally contains no user accounts or password hashes.
-Provision accounts through your authorized local account-management workflow.
+The SQL dump seeds the following initial accounts:
+
+| Username | Email | Role |
+|---|---|---|
+| `admin` | `admin@neartrip.com` | `admin` |
+| `user` | `user@neartrip.com` | `user` |
+| `sandaruwan` | `sandaru@neartrip.com` | `user` |
+
+Passwords are stored as bcrypt hashes in the SQL dump, not as readable
+passwords. Use the initial passwords provided by the project maintainer.
 
 ---
 
